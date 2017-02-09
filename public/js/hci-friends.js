@@ -44,3 +44,13 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+ console.log('hehe');
+ $(".friendName").click(changeText);
+ 
+ function changeText(event){
+ 	event.preventDefault();
+ 	var oldName = $(this).text();
+ 	var newName = anagrammedName(oldName);
+    $(this).text(newName);
+ }
